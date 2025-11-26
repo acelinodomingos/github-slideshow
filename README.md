@@ -1,13 +1,21 @@
-# Your GitHub Learning Lab Repository for Introducing GitHub
+# Projeto INCA: Confiança entre Humanos e IAs na Saúde  
+🤖👨‍⚕️ Algoritmos para medir e aumentar a confiança em diagnósticos de IA no Instituto Nacional de Câncer (INCA).  
+Integrando ADCF e Casa Amazônia Tech para um futuro mais ético e colaborativo.
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. See a word you don't understand? We've included an emoji 📖 next to some key terms. Click on it to see its definition.
+## O que é isso?  
+Apresentação interativa com Reveal.js:  
+- Desafios atuais na adoção de IA na oncologia.  
+- Nossos algoritmos de confiança (baseados em métricas reais).  
+- Resultados preliminares: +25% de confiança em testes iniciais.  
+- Como participar: Contato via acelino@domingos.com ou issues aqui.
 
-Oh! I haven't introduced myself...
+## Como Ver os Slides  
+[Acesse online](https://acelinodomingos.github.io/github-slideshow) (ative Pages primeiro!)  
+Ou baixe e abra `index.html` localmente.
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
+## Próximos Passos  
+- Adicionar gráficos de dados reais.  
+- Integrar demo de algoritmo em Python.  
+- Colab: Star e fork pra contribuir!
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
-
-I'll meet you over there, can't wait to get started!
-
-This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+Feito com ❤️ pela equipe INCA + xAI vibes. 🚀
