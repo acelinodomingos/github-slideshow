@@ -1,13 +1,40 @@
-# Your GitHub Learning Lab Repository for Introducing GitHub
+## Diagrama de Arquitetura do AI-CryoDiag
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. See a word you don't understand? We've included an emoji 📖 next to some key terms. Click on it to see its definition.
+```mermaid
+graph TB
+    A["Tanque Criogênico<br/>Oxigênio Líquido / Nitrogênio Líquido"]
+    B["Sensor de Pressão<br/>(0-25 bar)"]
+    C["Sensor de Nível<br/>(Ultrasônico / Radar)"]
+    D["Sensor de Temperatura<br/>(PT100 / Termopar)"]
+    E["Gateway IoT<br/>(ESP32 / Raspberry Pi 4)"]
+    F["MQTT Broker<br/>(Mosquitto / EMQX / HiveMQ)"]
+    G["Alertas Push em Tempo Real<br/>(Firebase Cloud Messaging)"]
+    H["Dashboard Web<br/>(React.js + Chart.js + Tailwind)"]
+    I["Modelo de Machine Learning<br/>(Detecção de vazamentos e falhas)"]
+    J["Banco de Dados<br/>(InfluxDB + PostgreSQL)"]
+    K["API REST<br/>(FastAPI / Flask)"]
+    L["App Mobile<br/>(Flutter ou React Native)"]
 
-Oh! I haven't introduced myself...
+    A --> B
+    A --> C
+    A --> D
+    B & C & D --> E
+    E -->|Telemetria em tempo real| F
+    F --> G
+    F --> H
+    F --> I
+    F --> J
+    J --> K
+    K --> H
+    K --> L
+    H & L -->|Notificações críticas| G
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
+    classDef hardware fill:#1f6feb,stroke:#fff,color:#fff
+    classDef cloud fill:#ff5722,stroke:#fff,color:#fff
+    classDef frontend fill:#4caf50,stroke:#fff,color:#fff
+    classDef ml fill:#9c27b0,stroke:#fff,color:#fff
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
-
-I'll meet you over there, can't wait to get started!
-
-This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+    class A,B,C,D,E hardware
+    class F,G,J cloud
+    class H,L frontend
+    class I ml
